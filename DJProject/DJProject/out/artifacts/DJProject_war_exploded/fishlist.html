@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fish List</title>
+  <link rel ="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row ">
+    <div class="col-3">
+      <a  href="index.html"  class="btn btn-primary btn-lg  text-light">Home</a>
+    </div>
+    <div class="col-3">
+      <a href="fishlist.html" class="btn btn-primary btn-lg  text-light">Fish List</a>
+    </div>
+    <div class="col-3">
+      <a href="fishdetails.html" class="btn btn-primary btn-lg  text-light">Fishing Spots</a>
+    </div>
+    <div class="col-3">
+      <a href="summary.html" class="btn btn-primary btn-lg  text-light">Summary</a>
+    </div>
+  </div>
+
+
+
+
+  <div class="row p-4">
+    <div class="col-md ">
+      <img  src="pike2.jpg">
+      <br>
+      Northern Pike
+      <br>
+      <br>
+      Summary:
+      <br>
+      <form action=""name="pikeDetails" onsubmit="return validateEntry()">
+      <textarea name="pikeEntry" class="w-50" required minlength="50" maxlength="200">
+Northern Pikes are native to Northern America and Europe and are common in cold freshwater lakes and rivers.
+      They can be caught on lures and lives bait, but have sharp teeth so wire leaders are advised.
+</textarea>
+<br>
+        <input class="btn-primary m-2" type="button" value="Edit Summary" id="pike">
+      </form>
+    </div>
+
+  </div>
+  <div class="row p-4">
+    <div class="col-md ">
+      <img  src="bass.jpg">
+      <br>
+      Largemouth Bass
+      <br>
+      <br>
+      Summary:
+      <br>
+      <form method="POST"  action=""name="bassDetails" onsubmit="return validateEntry()">
+      <textarea name="bassText" class="w-50" required minlength="50" maxlength="200">
+Largemouth Bass are common in lakes and large rivers throughout the US. They are a feisty, fun to catch game fish that particularly like to eat plastics, crankbaits and live minnows.
+</textarea>
+        <br>
+        <input class="btn-primary m-2" type="button" value="Edit Summary" id="bass">
+      </form>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+<footer>
+  <p class ="text-center font-italic navbar fixed-bottom"> Henry Delicate @ 2019</p>
+
+</footer>
+</body>
+</html>
