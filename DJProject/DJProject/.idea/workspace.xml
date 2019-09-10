@@ -6,12 +6,133 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9f24773-5721-4f73-a28f-0cf415e81785" name="Default Changelist" comment="" />
+    <list default="true" id="c9f24773-5721-4f73-a28f-0cf415e81785" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/db.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/log/log.ctrl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/log/log1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/log/logmirror.ctrl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c101.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c111.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c121.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c130.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c141.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c150.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c161.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c171.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c180.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c191.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c1a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c1b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c1c0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c1d1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c1e0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c1f1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c200.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c211.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c221.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c230.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c241.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c251.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c260.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c271.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c281.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c290.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c2a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c2b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c2c1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c2d0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c2e1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c2f0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c300.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c31.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c311.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c321.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c331.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c340.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c351.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c361.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c371.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c380.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c391.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c3a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c3b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c3c0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c3d1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c3e1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c3f1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c400.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c41.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c411.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c421.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c430.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c441.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c451.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c461.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c470.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c481.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c490.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c4a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c4b0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c4c1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c4d0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c4e1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c4f0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c501.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c51.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c510.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c521.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c531.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c541.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c60.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c71.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c81.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/c90.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/ca1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/cb1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/cc0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/cd1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/ce1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/seg0/cf0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dbhenryfish/service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/derby.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/derbyshared.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/derbytools.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/DJProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/DJProject_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DJProject.iml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/DJProject_war_exploded/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -20,14 +141,56 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1905" />
+    <option name="width" value="1950" />
+    <option name="height" value="2075" />
+  </component>
   <component name="ProjectId" id="1Q4GbP1uu4oWsTfN2DKVplRccAL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DJProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DJProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DJProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DJProject" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DJProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DJProject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568143468489" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/dbhenryfish" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Henry Delicate\Documents\GitHub\DistributedJava\DJProject\DJProject\lib" />
       <recent name="C:\Users\bitstudent\IdeaProjects\DJProject\web" />
     </key>
   </component>
@@ -95,10 +258,142 @@
       <updated>1567022525664</updated>
       <workItem from="1567022528765" duration="300000" />
       <workItem from="1567620737531" duration="1808000" />
+      <workItem from="1568139410008" duration="2765000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2765000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24949698" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/util/concurrent/ConcurrentSkipListMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="535" column="14" selection-start-line="535" selection-start-column="14" selection-end-line="535" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/DJProject_war_exploded/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>DJProject:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8.0_181</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DJProject</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
