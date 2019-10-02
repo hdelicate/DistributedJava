@@ -11,17 +11,16 @@ public class SpringApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // retrieve bean from Spring container
-        Fish_Species fishSpecies1 = context.getBean("fishSpecies", Fish_Species.class);
-        Fishing_Spot fishSpot = context.getBean("fishSpot", Fishing_Spot.class);
-        Species_Spots speciesSpot  = context.getBean("speciesSpot", Species_Spots.class);
+        Fish_Species fishSpecies1 = context.getBean("Fish_Species", Fish_Species.class);
+        Fishing_Spot fishSpot = context.getBean("Fish_Spot", Fishing_Spot.class);
+
         // call methods on the bean
         System.out.println(fishSpecies1.getLogInfo());
         System.out.println(fishSpot.getLogInfo());
-        System.out.println(speciesSpot.getLogInfo());
+
 
         // call getters for literal values
-        System.out.println(speciesSpot.getSpot_ID());
-        System.out.println(speciesSpot.getSpecies_ID());
+
         System.out.println(fishSpot.getSpot_ID());
         System.out.println(fishSpot.getSpecies());
         System.out.println(fishSpot.getName());

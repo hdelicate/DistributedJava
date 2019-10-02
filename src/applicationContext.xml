@@ -10,11 +10,23 @@
     <bean id="Fish_Species" class="springxml.beans.Fish_Species">
         <constructor-arg ref="myLogger"/>
         <!-- Setter injection -->
-        <property name="log" ref="logClass"/>
+        <property name="log" ref="myLogger"/>
 
         <!-- Inject literal values from properties file -->
-        <property name="bass" value="${c1.speciesName}"/>
-        <property name="team" value="${c1.Summary}"/>
+        <property name="speciesName" value="${fish1.speciesName} "/>
+        <property name="summary" value="${fish1.Summary}"/>
+    </bean>
+
+    <bean id="Fish_Spot" class="springxml.beans.Fishing_Spot">
+        <constructor-arg ref="myLogger"/>
+        <!-- Setter injection -->
+        <property name="log" ref="myLogger"/>
+
+        <!-- Inject literal values from properties file -->
+        <property name="Species" value="${fish2.Species} "/>
+        <property name="Name" value="${fish2.Name}"/>
+        <property name="Type" value="${fish2.Type} "/>
+        <property name="Summary" value="${fish2.Summary}"/>
     </bean>
 
 </beans>
