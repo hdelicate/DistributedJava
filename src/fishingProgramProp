@@ -1,0 +1,6 @@
+fish1.speciesName = "Musky" 
+fish1.Summary = "Muskies are a difficult fish to catch that get very large and are found in Northern States"
+fish2.Species="Musky"
+fish2.Name = "Lake Michigan"
+fish2.Type="Lake"
+fish2.Summary="Lake Michigan is one of the great lakes and is home to a plethora of different fish species"
