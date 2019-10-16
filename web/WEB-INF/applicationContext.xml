@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- Support for component scanning -->
+    <context:component-scan base-package="springmvc"/>
+
+    <!-- Support for conversion, formatting, and validation -->
+    <mvc:annotation-driven/>
+
+    <!-- Configure Spring MVC view resolver -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- When our application provides a view name, Spring
+         prepends the prefix and appends the suffix to it -->
+
+        <!-- e.g. show-student-list becomes:
+        /WEB-INF/view/show-student-list.jsp -->
+
+        <!-- Basically, where to look for view files -->
+        <!-- Be sure to create this folder! -->
+        <property name="prefix" value="/WEB-INF/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!-- Redirect any request starting with /resources/ (including subdirectories)
+         to the /resources/ folder -->
+    <!-- Stops static file requests from going to dispatcher servlet -->
+    <!-- See https://stackoverflow.com/questions/40188743/double-asterisk-in-a-request-mapping/40202997 -->
+    <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"></mvc:resources>
+</beans>
