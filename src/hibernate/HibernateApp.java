@@ -21,7 +21,7 @@ public class HibernateApp {
     public static void main(String[] args) {
         HibernateApp fish = new HibernateApp();
         try {
-            fish.createSpecies();
+            fish.createSpot();
         } finally {
             fish.close();
         }
