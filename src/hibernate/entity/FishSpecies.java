@@ -6,21 +6,21 @@ import java.util.List;
 @Entity
 @Table(name = "FishSpecies")
 public class FishSpecies {
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        @Column(name = "species_id")
-        private int id;
-        @Column(name = "species_nm")
-        private String speciesName;
-        @Column(name = "summary")
-        private String summary;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "species_id")
+    private int id;
+    @Column(name = "species_nm")
+    private String speciesName;
+    @Column(name = "summary")
+    private String summary;
     @ManyToMany(cascade = {CascadeType.DETACH,
             CascadeType.MERGE,
             CascadeType.PERSIST,
             CascadeType.REFRESH})
-    @JoinTable(name="SpotSpecies",
-            joinColumns = @JoinColumn(name="species_id"),
-            inverseJoinColumns = @JoinColumn(name="spot_id"))
+    @JoinTable(name = "SpotSpecies",
+            joinColumns = @JoinColumn(name = "species_id"),
+            inverseJoinColumns = @JoinColumn(name = "spot_id"))
     private List<FishingSpot> spotList;
 
     public FishSpecies() {

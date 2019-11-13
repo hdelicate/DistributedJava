@@ -20,9 +20,9 @@ public class FishingSpot {
             CascadeType.MERGE,
             CascadeType.PERSIST,
             CascadeType.REFRESH})
-    @JoinTable(name="SpotSpecies",
-            joinColumns = @JoinColumn(name="spot_id"),
-            inverseJoinColumns = @JoinColumn(name="species_id"))
+    @JoinTable(name = "SpotSpecies",
+            joinColumns = @JoinColumn(name = "spot_id"),
+            inverseJoinColumns = @JoinColumn(name = "species_id"))
     private List<FishSpecies> speciesList;
 
     public FishingSpot() {
@@ -37,9 +37,11 @@ public class FishingSpot {
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public List<FishSpecies> getSpeciesList() {
         return speciesList;
     }
@@ -47,6 +49,7 @@ public class FishingSpot {
     public void setSpeciesList(List<FishSpecies> speciesList) {
         this.speciesList = speciesList;
     }
+
     public String getSpotName() {
         return spotName;
     }

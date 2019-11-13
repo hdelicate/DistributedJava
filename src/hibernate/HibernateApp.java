@@ -17,24 +17,24 @@ public class HibernateApp {
                 .addAnnotatedClass(FishSpecies.class)
                 .buildSessionFactory();
     }
-public static void main(String[]args)
-{
-    HibernateApp fish = new HibernateApp();
-    try {
 
-    } finally {
-        fish.close();
+    public static void main(String[] args) {
+        HibernateApp fish = new HibernateApp();
+        try {
+            fish.createSpecies();
+        } finally {
+            fish.close();
+        }
+
     }
 
-}
+    private void createSpecies() {
+        Session session = factory.getCurrentSession();
 
-private void createSpecies(){
-    Session session = factory.getCurrentSession();
-
-    session.beginTransaction();
-    FishSpecies species = new FishSpecies('Walleye', 'Walleye are native to North America and Europe(known in Europe as Zander), and are an elusive and picky fish that are the prize of anglers everywhere.')
-            session.save(species);
-    session.getTransaction().commit();
+        session.beginTransaction();
+        FishSpecies species = new FishSpecies("Walleye", "Walleye are native to North America and Europe(known in Europe as Zander), and are an elusive and picky fish that are the prize of anglers everywhere.");
+        session.save(species);
+        session.getTransaction().commit();
     }
 
     private void readSpecies(int speciesId) {
@@ -45,7 +45,7 @@ private void createSpecies(){
         // Do stuff
         FishSpecies species = session.get(FishSpecies.class, speciesId);
 
-        if (species == null){
+        if (species == null) {
             System.out.println("No species found for ID " + speciesId);
         } else {
             System.out.println(species);
@@ -53,6 +53,7 @@ private void createSpecies(){
 
         session.getTransaction().commit();
     }
+
     private void updateSpecies(int SpeciesId) {
         Session session = factory.getCurrentSession();
 
@@ -65,6 +66,7 @@ private void createSpecies(){
 
         session.getTransaction().commit();
     }
+
     private void deleteSpecies(int speciesId) {
         Session session = factory.getCurrentSession();
 
@@ -72,18 +74,18 @@ private void createSpecies(){
 
         // Do stuff
         FishSpecies doomedFish = session.get(FishSpecies.class, speciesId);
-        if(doomedFish != null)
+        if (doomedFish != null)
             session.delete(doomedFish);
 
         session.getTransaction().commit();
     }
 
     //Fishing Spot
-    private void createSpot(){
+    private void createSpot() {
         Session session = factory.getCurrentSession();
 
         session.beginTransaction();
-        FishingSpot spot = new FishingSpot('Lake Woebegon', 'Lake', 'Lake Woebegon is a fantastic Minnesota lake described often in the Prarie Home Companion Radio show')
+        FishingSpot spot = new FishingSpot("Lake Woebegon", "Lake", "Lake Woebegon is a fantastic Minnesota lake described often in the Prarie Home Companion Radio show");
         session.save(spot);
         session.getTransaction().commit();
     }
@@ -96,7 +98,7 @@ private void createSpecies(){
         // Do stuff
         FishingSpot spot = session.get(FishingSpot.class, spotId);
 
-        if (spot == null){
+        if (spot == null) {
             System.out.println("No fishing spot found for ID " + spotId);
         } else {
             System.out.println(spot);
@@ -104,6 +106,7 @@ private void createSpecies(){
 
         session.getTransaction().commit();
     }
+
     private void updateSpot(int spotId) {
         Session session = factory.getCurrentSession();
 
@@ -116,6 +119,7 @@ private void createSpecies(){
 
         session.getTransaction().commit();
     }
+
     private void deleteSpot(int spotId) {
         Session session = factory.getCurrentSession();
 
@@ -123,12 +127,14 @@ private void createSpecies(){
 
         // Do stuff
         FishingSpot doomedSpot = session.get(FishingSpot.class, spotId);
-        if(doomedSpot != null)
+        if (doomedSpot != null)
             session.delete(doomedSpot);
 
         session.getTransaction().commit();
     }
 
-
+    private void close() {
+        factory.close();
+    }
 
 }
