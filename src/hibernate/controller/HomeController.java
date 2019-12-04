@@ -32,7 +32,7 @@ import javax.servlet.http.HttpServletRequest;
 
             theModel.addAttribute("errorMessage", message);
 
-            return "errors";
+            return "error";
         }
 
 }

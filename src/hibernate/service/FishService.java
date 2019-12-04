@@ -8,7 +8,7 @@ import java.util.List;
 public interface FishService {
     List<FishSpecies> getFishes();
 
-    void saveFish(FishSpecies aFish, MultipartFile file, String applicationPath);
+    void saveFish(FishSpecies aFish, String applicationPath);
 
     FishSpecies getFish(int theId);
 

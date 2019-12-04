@@ -60,7 +60,7 @@ import java.util.List;
 
             theModel.addAttribute("aFish", existingFish);
 
-            theModel.addAttribute("shops", fishingSpotService.getSpots());
+            theModel.addAttribute("spots", fishingSpotService.getSpots());
 
             return "add-fish-form";
         }
@@ -71,26 +71,25 @@ import java.util.List;
 
             theModel.addAttribute("aFish", plainFish);
 
-            theModel.addAttribute("shops", fishingSpotService.getSpots());
+            theModel.addAttribute("spots", fishingSpotService.getSpots());
 
             return "add-fish-form";
         }
 
         @PostMapping("/save")
-        public String saveFish(@RequestParam(name = "fishImage") MultipartFile file,
-                                @Valid @ModelAttribute(name = "aFish") FishSpecies theFish,
+        public String saveFish(@Valid @ModelAttribute(name = "aFish") FishSpecies theFish,
                                 BindingResult bindingResult,
                                 Model theModel,
                                 HttpServletRequest request) {
             if (bindingResult.hasErrors()) {
                 System.out.println(bindingResult);
 
-                theModel.addAttribute("shops", fishingSpotService.getSpots());
+                theModel.addAttribute("spots", fishingSpotService.getSpots());
 
                 return "add-fish-form";
             }
 
-            fishService.saveFish(theFish, file, request.getServletContext().getRealPath("/"));
+            fishService.saveFish(theFish, request.getServletContext().getRealPath("/"));
 
             return "redirect:/fish/list";
         }

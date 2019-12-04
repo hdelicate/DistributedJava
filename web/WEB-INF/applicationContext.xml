@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -11,7 +10,7 @@
     <bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
         <!-- JDBC Database connection settings -->
         <property name="driverClass" value="org.apache.derby.jdbc.EmbeddedDriver"/>
-        <property name="jdbcUrl" value="jdbc:derby:#{ servletContext.getRealPath('/') }/../../../db"/>
+        <property name="jdbcUrl" value="jdbc:derby:#{ servletContext.getRealPath('/') }/../../../lib/dbhenryfish"/>
         <property name="user" value="hdelicate"/>
         <property name="password" value="000534589"/>
 

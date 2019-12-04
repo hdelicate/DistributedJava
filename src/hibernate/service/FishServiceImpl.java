@@ -27,7 +27,7 @@ public class FishServiceImpl implements FishService {
 
     @Override
     @Transactional
-    public void saveFish(FishSpecies aFish, MultipartFile file, String applicationPath) {
+    public void saveFish(FishSpecies aFish, String applicationPath) {
         fishDAO.saveFish(aFish);
     }
 
