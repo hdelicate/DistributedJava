@@ -12,8 +12,8 @@
         <!-- JDBC Database connection settings -->
         <property name="driverClass" value="org.apache.derby.jdbc.EmbeddedDriver"/>
         <property name="jdbcUrl" value="jdbc:derby:#{ servletContext.getRealPath('/') }/../../../db"/>
-        <property name="user" value="donut_reviews"/>
-        <property name="password" value="stacy"/>
+        <property name="user" value="hdelicate"/>
+        <property name="password" value="000534589"/>
 
         <!-- these are connection pool properties for C3P0 -->
         <property name="initialPoolSize" value="5"/>
@@ -25,7 +25,7 @@
     <!-- Hibernate session factory bean -->
     <bean id="mySessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="myDataSource"/>
-        <property name="packagesToScan" value="entity" />
+        <property name="packagesToScan" value="hibernate" />
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</prop>
@@ -59,7 +59,7 @@
     <!-- END NEW HIBERNATE CONFIGURATION -->
 
     <!-- Support for component scanning -->
-    <context:component-scan base-package="src"/>
+    <context:component-scan base-package="hibernate"/>
 
     <!-- Support for conversion, formatting, and validation -->
     <mvc:annotation-driven conversion-service="myConversionService"/>

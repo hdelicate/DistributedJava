@@ -2,6 +2,7 @@ package hibernate.controller;
 
 import hibernate.entity.FishSpecies;
 import hibernate.service.FishService;
+import hibernate.service.FishingSpotService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
@@ -13,19 +14,21 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.util.List;
 
-    @Controller
+@Controller
     @RequestMapping("/fish")
     public class FishController {
 
         @Autowired
         private FishService fishService;
-
+    @Autowired
+    private FishingSpotService fishingSpotService;
 
 
         @RequestMapping("/list")
         public String listFish(Model theModel) {
-            List<FishSpecies> theList = fishService.getFish();
+            List<FishSpecies> theList = fishService.getFishes();
 
             theModel.addAttribute("fish", theList);
 
@@ -36,7 +39,7 @@ import javax.validation.Valid;
         public String search(@RequestParam("searchTerm") String theSearchTerm,
                              Model theModel) {
 
-            List<Fish> theList = fishService.getFishByName(theSearchTerm);
+            List<FishSpecies> theList = fishService.getFishByName(theSearchTerm);
 
             theModel.addAttribute("fish", theList);
 
@@ -53,36 +56,36 @@ import javax.validation.Valid;
         @RequestMapping("/showUpdateFishForm")
         public String showUpdateFishForm(@RequestParam("fishId") int theId,
                                           Model theModel) {
-            Fish existingFish = fishService.getFish(theId);
+            FishSpecies existingFish = fishService.getFish(theId);
 
             theModel.addAttribute("aFish", existingFish);
 
-            theModel.addAttribute("shops", fishShopService.getShops());
+            theModel.addAttribute("shops", fishingSpotService.getSpots());
 
             return "add-fish-form";
         }
 
         @GetMapping("/showAddFishForm")
         public String showAddFishForm(Model theModel) {
-            Fish plainFish = new Fish();
+            FishSpecies plainFish = new FishSpecies();
 
             theModel.addAttribute("aFish", plainFish);
 
-            theModel.addAttribute("shops", fishShopService.getShops());
+            theModel.addAttribute("shops", fishingSpotService.getSpots());
 
             return "add-fish-form";
         }
 
         @PostMapping("/save")
         public String saveFish(@RequestParam(name = "fishImage") MultipartFile file,
-                                @Valid @ModelAttribute(name = "aFish") Fish theFish,
+                                @Valid @ModelAttribute(name = "aFish") FishSpecies theFish,
                                 BindingResult bindingResult,
                                 Model theModel,
                                 HttpServletRequest request) {
             if (bindingResult.hasErrors()) {
                 System.out.println(bindingResult);
 
-                theModel.addAttribute("shops", fishShopService.getShops());
+                theModel.addAttribute("shops", fishingSpotService.getSpots());
 
                 return "add-fish-form";
             }

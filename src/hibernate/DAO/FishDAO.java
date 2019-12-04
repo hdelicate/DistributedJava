@@ -1,14 +1,14 @@
-package hibernate.service;
+package hibernate.DAO;
 
 import hibernate.entity.FishSpecies;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-public interface FishService {
+public interface FishDAO {
+
     List<FishSpecies> getFishes();
 
-    void saveFish(FishSpecies aFish, MultipartFile file, String applicationPath);
+    void saveFish(FishSpecies aFish);
 
     FishSpecies getFish(int theId);
 
