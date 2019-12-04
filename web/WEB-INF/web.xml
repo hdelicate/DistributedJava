@@ -10,7 +10,7 @@
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
-    <!-- This is the front controller -->
+    <!-- This is the front hibernate.controller -->
     <servlet>
         <!-- matches servlet-name below -->
         <servlet-name>dispatcher</servlet-name>
